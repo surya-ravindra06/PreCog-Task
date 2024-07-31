@@ -223,15 +223,12 @@ The results are as follows:
 | Phrase Only | 32.22% |
 | Phrase + Sentence | 47.15% |
 | Phrase Attention | 50.00% |
-| Phrase Bert | 60.04% |
 
 As we can see, the accuracy is very bad for the Phrase Only model. This is because the phrase embeddings are not able to capture the context of the phrase in the sentence.
 
 The Phrase + Sentence model performs better than the Phrase-only model because the phrase embeddings are a combination of the phrase and the sentence embeddings. Thus, the phrase embeddings can capture the context of the phrase to some extent.
 
 The Phrase Attention model performs better than the Phrase + Sentence model because the context vector is calculated using the attention mechanism. Thus, the context vector can capture the relevant information from the sentence concerning the phrase.
-
-We see that the Phrase Bert model has an accuracy of 60.05% which is close to the accuracy mentioned in the paper (63.40%).
 
 ### Dataset Analysis
 
