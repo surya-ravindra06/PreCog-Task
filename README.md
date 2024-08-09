@@ -71,9 +71,7 @@ Sentences were extracted from the corpus and then preprocessed and a vocabulary 
 
 ### Testing
 
-The pretrained embeddings were used to find the similarity between the pair of words. The similarity was calculated using the cosine similarity between the embeddings of the words, and since the scores in the dataset are between 0-10, the cosine similarity scores were also scaled to a range of 0 to 10 using the following formula:
-
-similarity = (cosine_similarity+1)*5
+The pretrained embeddings were used to find the similarity between the pair of words. The similarity was calculated using the cosine similarity between the embeddings of the words, and since the scores in the dataset are between 0-10.
 
 The similarity scores were then compared with the actual simlex scores from the test dataset to calculate Spearman's correlation coefficient.
 
